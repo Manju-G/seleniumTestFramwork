@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="trace" monitorInterval="30">
 	<Properties>
 		<Property name="basePath">./src/main/java/logs/</Property>
 	</Properties>
@@ -9,9 +9,9 @@
 			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 			<SizeBasedTriggeringPolicy size="500" />
 		</RollingFile>
-		<Console name="Console" target="SYSTEM_OUT">
-			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
-		</Console>
+<!-- 		<Console name="Console" target="SYSTEM_OUT"> -->
+<!-- 			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" /> -->
+<!-- 		</Console> -->
 	</Appenders>
 	<Loggers>
 <!-- 		<Logger name="alpha" level="error" additivity="false"> -->
