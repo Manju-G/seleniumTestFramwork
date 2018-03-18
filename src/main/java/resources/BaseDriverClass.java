@@ -50,9 +50,7 @@ public class BaseDriverClass {
 		} else {
 			log.fatal("Requested browser not exist " + browser);
 		}
+		driver.manage().window().maximize();
 		return driver;
-	}
-	public static void main(String[] args) {
-		new BaseDriverClass().initilize();
 	}
 }

@@ -1,2 +1,5 @@
-19:20:25.102 [main] INFO  utility.LoadPropertiesFile - Started reading the file PathFile.properties in path src\main\java\Config Files\PathFile.properties
-19:20:25.125 [main] INFO  resources.BaseDriverClass - Loading the Chrome browser.
+20:00:29.682 [main] INFO  levelOne.Sample1Test - Clicking on link login
+20:00:29.861 [main] INFO  utility.SeleniumUtility - Current opened tab : CDwindow-(6863D18051EC7C21FF6A778005268AE) and tile is PHPTRAVELS | Demo
+20:00:29.861 [main] INFO  utility.SeleniumUtility - Switching the tabs.
+20:00:29.868 [main] INFO  utility.SeleniumUtility - Current opened tabs count 2
+20:00:29.886 [main] INFO  utility.SeleniumUtility - Switched tab : CDwindow-(65517A7677D0ED37B9AB40DF3493C261) and tile is PHPTRAVELS | Demo

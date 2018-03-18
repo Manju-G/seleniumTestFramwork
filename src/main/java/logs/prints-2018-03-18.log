@@ -1,0 +1,5 @@
+19:59:10.874 [main] INFO  utility.LoadPropertiesFile - Started loading the Properties file and file path is "src/main/java/Config Files/PathFile.properties"
+19:59:10.877 [main] INFO  utility.LoadPropertiesFile - Started reading the file PathFile.properties in path src\main\java\Config Files\PathFile.properties
+19:59:10.878 [main] INFO  resources.BaseDriverClass - Loading the Chrome browser.
+19:59:14.631 [main] INFO  levelOne.Sample1Test - Loading the page : https://phptravels.com/demo/
+20:00:29.672 [main] INFO  levelOne.Sample1Test - Current title of opened browser tab : PHPTRAVELS | Demo
