@@ -1,0 +1,5 @@
+13:42:17.078 [main] INFO  resources.BaseDriverClass - Started loading the driver
+13:42:17.082 [main] INFO  resources.BaseDriverClass - Started reading the file PathFile.properties in path src\main\java\Config Files\PathFile.properties
+13:42:17.082 [main] INFO  resources.BaseDriverClass - Loading the Chrome browser.
+19:20:25.099 [main] INFO  resources.BaseDriverClass - Started loading the driver
+19:20:25.102 [main] INFO  utility.LoadPropertiesFile - Started loading the Properties file and file path is "src/main/java/Config Files/PathFile.properties"

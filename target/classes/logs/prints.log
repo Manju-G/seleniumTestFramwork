@@ -1,0 +1,2 @@
+19:20:25.102 [main] INFO  utility.LoadPropertiesFile - Started reading the file PathFile.properties in path src\main\java\Config Files\PathFile.properties
+19:20:25.125 [main] INFO  resources.BaseDriverClass - Loading the Chrome browser.
