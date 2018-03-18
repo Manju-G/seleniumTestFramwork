@@ -29,7 +29,7 @@ public class HomePage {
 	@FindBy(how = How.CSS, using = t_loginLink)
 	WebElement loginLink;
 	@FindBy(how = How.LINK_TEXT, using = "classname")
-	WebElement element;
+	WebElement element;245465
 	@FindBy(how = How.CLASS_NAME, using = "classname")
 	WebElement element;
 
