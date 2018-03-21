@@ -18,6 +18,10 @@ public class BaseDriverClass {
 	String currentPath = System.getProperty("user.dir");
 	File driverrPath = new File("src/main/java/Config Files/drivers");
 
+	public static WebDriver getDriver() {
+		return driver;
+	}
+
 	public WebDriver initilize() {
 		String path = "src/main/java/Config Files/PathFile.properties";
 		log.info("Started loading the driver");

@@ -2,60 +2,32 @@
 <testng-results skipped="1" failed="1" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="380211" started-at="2018-03-18T14:29:10Z" finished-at="2018-03-18T14:35:31Z">
+  <suite name="Default suite" duration-ms="62853" started-at="2018-03-21T16:52:57Z" finished-at="2018-03-21T16:54:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="380211" started-at="2018-03-18T14:29:10Z" finished-at="2018-03-18T14:35:31Z">
-      <class name="levelOne.Sample1Test">
-        <test-method status="PASS" signature="loadBrowser()[pri:0, instance:levelOne.Sample1Test@71809907]" name="loadBrowser" is-config="true" duration-ms="78736" started-at="2018-03-18T19:59:10Z" finished-at="2018-03-18T20:00:29Z">
+    <test name="Default test" duration-ms="62853" started-at="2018-03-21T16:52:57Z" finished-at="2018-03-21T16:54:00Z">
+      <class name="utility.Sample1Test2">
+        <test-method status="PASS" signature="loadBrowser()[pri:0, instance:utility.Sample1Test2@1caa0244]" name="loadBrowser" is-config="true" duration-ms="16598" started-at="2018-03-21T22:22:57Z" finished-at="2018-03-21T22:23:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadBrowser -->
-        <test-method status="PASS" signature="homepageTest()[pri:0, instance:levelOne.Sample1Test@71809907]" name="homepageTest" duration-ms="17" started-at="2018-03-18T20:00:29Z" finished-at="2018-03-18T20:00:29Z">
+        <test-method status="PASS" signature="homepageTest()[pri:0, instance:utility.Sample1Test2@1caa0244]" name="homepageTest" duration-ms="21" started-at="2018-03-21T22:23:14Z" finished-at="2018-03-21T22:23:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepageTest -->
-        <test-method status="FAIL" signature="loginLinkTest()[pri:0, instance:levelOne.Sample1Test@71809907]" name="loginLinkTest" duration-ms="301374" started-at="2018-03-18T20:00:29Z" depends-on-methods="levelOne.Sample1Test.homepageTest" finished-at="2018-03-18T20:05:31Z">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="FAIL" signature="loginLinkTest()[pri:0, instance:utility.Sample1Test2@1caa0244]" name="loginLinkTest" duration-ms="44947" started-at="2018-03-21T22:23:14Z" depends-on-methods="utility.Sample1Test2.homepageTest" finished-at="2018-03-21T22:23:59Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[timeout
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'MANJU', ip: '172.29.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\Manju\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: 73a5abc79bd0adceec471807a37cd89d]]>
+              <![CDATA[expected [Client Area1 - PHPTRAVELS] but found [Client Area - PHPTRAVELS]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'MANJU', ip: '172.29.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\Manju\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}
-Session ID: 73a5abc79bd0adceec471807a37cd89d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:277)
-	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:87)
-	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:82)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	at levelOne.Sample1Test.loginLinkTest(Sample1Test.java:42)
+              <![CDATA[java.lang.AssertionError: expected [Client Area1 - PHPTRAVELS] but found [Client Area - PHPTRAVELS]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at utility.Sample1Test2.loginLinkTest(Sample1Test2.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,15 +54,15 @@ Session ID: 73a5abc79bd0adceec471807a37cd89d
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLinkTest -->
-        <test-method status="SKIP" signature="checkLoginpageAndTryLogin()[pri:0, instance:levelOne.Sample1Test@71809907]" name="checkLoginpageAndTryLogin" duration-ms="0" started-at="2018-03-18T20:05:31Z" depends-on-methods="levelOne.Sample1Test.loginLinkTest" finished-at="2018-03-18T20:05:31Z">
+        <test-method status="SKIP" signature="checkLoginpageAndTryLogin()[pri:0, instance:utility.Sample1Test2@1caa0244]" name="checkLoginpageAndTryLogin" duration-ms="0" started-at="2018-03-21T22:24:00Z" depends-on-methods="utility.Sample1Test2.loginLinkTest" finished-at="2018-03-21T22:24:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginpageAndTryLogin -->
-      </class> <!-- levelOne.Sample1Test -->
+      </class> <!-- utility.Sample1Test2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
