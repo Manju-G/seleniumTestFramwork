@@ -13,8 +13,8 @@ import levelOne.Sample1Test;
 import page.object.HomePage;
 import page.object.LoginPage;
 import resources.BaseDriverClass;
-@Listeners(ScreenShotUtility.class)
-public class Sample1Test2 extends BaseDriverClass {
+@Listeners(TestListener.class)
+public class TempSample1Test2 extends BaseDriverClass {
 	private static Logger log = LogManager.getLogger(Sample1Test.class.getName());
 	String url = "https://phptravels.com/demo/";
 	WebDriverWait wait = null;

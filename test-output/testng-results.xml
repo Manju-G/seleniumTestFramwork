@@ -2,20 +2,20 @@
 <testng-results skipped="1" failed="1" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62853" started-at="2018-03-21T16:52:57Z" finished-at="2018-03-21T16:54:00Z">
+  <suite name="Default suite" duration-ms="38344" started-at="2018-03-22T14:05:56Z" finished-at="2018-03-22T14:06:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62853" started-at="2018-03-21T16:52:57Z" finished-at="2018-03-21T16:54:00Z">
+    <test name="Default test" duration-ms="38344" started-at="2018-03-22T14:05:56Z" finished-at="2018-03-22T14:06:34Z">
       <class name="utility.Sample1Test2">
-        <test-method status="PASS" signature="loadBrowser()[pri:0, instance:utility.Sample1Test2@1caa0244]" name="loadBrowser" is-config="true" duration-ms="16598" started-at="2018-03-21T22:22:57Z" finished-at="2018-03-21T22:23:14Z">
+        <test-method status="PASS" signature="loadBrowser()[pri:0, instance:utility.Sample1Test2@7ce69770]" name="loadBrowser" is-config="true" duration-ms="29166" started-at="2018-03-22T19:35:56Z" finished-at="2018-03-22T19:36:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadBrowser -->
-        <test-method status="PASS" signature="homepageTest()[pri:0, instance:utility.Sample1Test2@1caa0244]" name="homepageTest" duration-ms="21" started-at="2018-03-21T22:23:14Z" finished-at="2018-03-21T22:23:14Z">
+        <test-method status="PASS" signature="homepageTest()[pri:0, instance:utility.Sample1Test2@7ce69770]" name="homepageTest" duration-ms="25" started-at="2018-03-22T19:36:25Z" finished-at="2018-03-22T19:36:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepageTest -->
-        <test-method status="FAIL" signature="loginLinkTest()[pri:0, instance:utility.Sample1Test2@1caa0244]" name="loginLinkTest" duration-ms="44947" started-at="2018-03-21T22:23:14Z" depends-on-methods="utility.Sample1Test2.homepageTest" finished-at="2018-03-21T22:23:59Z">
+        <test-method status="FAIL" signature="loginLinkTest()[pri:0, instance:utility.Sample1Test2@7ce69770]" name="loginLinkTest" duration-ms="8756" started-at="2018-03-22T19:36:25Z" depends-on-methods="utility.Sample1Test2.homepageTest" finished-at="2018-03-22T19:36:34Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Client Area1 - PHPTRAVELS] but found [Client Area - PHPTRAVELS]]]>
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLinkTest -->
-        <test-method status="SKIP" signature="checkLoginpageAndTryLogin()[pri:0, instance:utility.Sample1Test2@1caa0244]" name="checkLoginpageAndTryLogin" duration-ms="0" started-at="2018-03-21T22:24:00Z" depends-on-methods="utility.Sample1Test2.loginLinkTest" finished-at="2018-03-21T22:24:00Z">
+        <test-method status="SKIP" signature="checkLoginpageAndTryLogin()[pri:0, instance:utility.Sample1Test2@7ce69770]" name="checkLoginpageAndTryLogin" duration-ms="0" started-at="2018-03-22T19:36:34Z" depends-on-methods="utility.Sample1Test2.loginLinkTest" finished-at="2018-03-22T19:36:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginpageAndTryLogin -->
