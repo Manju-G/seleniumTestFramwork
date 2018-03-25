@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="trace" monitorInterval="30">
 	<Properties>
-		<Property name="basePath">./src/main/java/logs/</Property>
+		<Property name="basePath">./ExecutionLogs/</Property>
 	</Properties>
 	<Appenders>
 		<RollingFile name="File" fileName="${basePath}/prints.log"

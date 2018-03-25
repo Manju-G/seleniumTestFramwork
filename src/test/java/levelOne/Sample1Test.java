@@ -8,10 +8,11 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import page.object.HomePage;
-import page.object.LoginPage;
+import pages.HomePage;
+import pages.LoginPage;
 import resources.BaseDriverClass;
 import utility.SeleniumUtility;
+
 
 public class Sample1Test extends BaseDriverClass {
 	private static Logger log = LogManager.getLogger(Sample1Test.class.getName());

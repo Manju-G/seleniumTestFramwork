@@ -1,33 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="3" passed="1">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38344" started-at="2018-03-22T14:05:56Z" finished-at="2018-03-22T14:06:34Z">
+  <suite name="Default suite" duration-ms="19975" started-at="2018-03-24T12:57:32Z" finished-at="2018-03-24T12:57:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38344" started-at="2018-03-22T14:05:56Z" finished-at="2018-03-22T14:06:34Z">
-      <class name="utility.Sample1Test2">
-        <test-method status="PASS" signature="loadBrowser()[pri:0, instance:utility.Sample1Test2@7ce69770]" name="loadBrowser" is-config="true" duration-ms="29166" started-at="2018-03-22T19:35:56Z" finished-at="2018-03-22T19:36:25Z">
+    <test name="Default test" duration-ms="19975" started-at="2018-03-24T12:57:32Z" finished-at="2018-03-24T12:57:52Z">
+      <class name="levelOne.Sample1Test">
+        <test-method status="PASS" signature="loadBrowser()[pri:0, instance:levelOne.Sample1Test@5386659f]" name="loadBrowser" is-config="true" duration-ms="9416" started-at="2018-03-24T18:27:32Z" finished-at="2018-03-24T18:27:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadBrowser -->
-        <test-method status="PASS" signature="homepageTest()[pri:0, instance:utility.Sample1Test2@7ce69770]" name="homepageTest" duration-ms="25" started-at="2018-03-22T19:36:25Z" finished-at="2018-03-22T19:36:25Z">
+        <test-method status="PASS" signature="homepageTest()[pri:0, instance:levelOne.Sample1Test@5386659f]" name="homepageTest" duration-ms="44" started-at="2018-03-24T18:27:41Z" finished-at="2018-03-24T18:27:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepageTest -->
-        <test-method status="FAIL" signature="loginLinkTest()[pri:0, instance:utility.Sample1Test2@7ce69770]" name="loginLinkTest" duration-ms="8756" started-at="2018-03-22T19:36:25Z" depends-on-methods="utility.Sample1Test2.homepageTest" finished-at="2018-03-22T19:36:34Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="loginLinkTest()[pri:0, instance:levelOne.Sample1Test@5386659f]" name="loginLinkTest" duration-ms="10428" started-at="2018-03-24T18:27:41Z" depends-on-methods="levelOne.Sample1Test.homepageTest" finished-at="2018-03-24T18:27:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLinkTest -->
+        <test-method status="FAIL" signature="checkLoginpageAndTryLogin()[pri:0, instance:levelOne.Sample1Test@5386659f]" name="checkLoginpageAndTryLogin" duration-ms="62" started-at="2018-03-24T18:27:51Z" depends-on-methods="levelOne.Sample1Test.loginLinkTest" finished-at="2018-03-24T18:27:52Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [Client Area1 - PHPTRAVELS] but found [Client Area - PHPTRAVELS]]]>
+              <![CDATA[unknown error: call function result missing 'value'
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MANJU', ip: '172.29.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\Manju\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: 4359b772bf99d600241f19730c7fbd66]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Client Area1 - PHPTRAVELS] but found [Client Area - PHPTRAVELS]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at utility.Sample1Test2.loginLinkTest(Sample1Test2.java:45)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: call function result missing 'value'
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'MANJU', ip: '172.29.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.34.522940 (1a76f96f66e3ca..., userDataDir: C:\Users\Manju\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: 4359b772bf99d600241f19730c7fbd66
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy25.clear(Unknown Source)
+	at page.object.LoginPage.login(LoginPage.java:40)
+	at levelOne.Sample1Test.checkLoginpageAndTryLogin(Sample1Test.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,15 +90,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginLinkTest -->
-        <test-method status="SKIP" signature="checkLoginpageAndTryLogin()[pri:0, instance:utility.Sample1Test2@7ce69770]" name="checkLoginpageAndTryLogin" duration-ms="0" started-at="2018-03-22T19:36:34Z" depends-on-methods="utility.Sample1Test2.loginLinkTest" finished-at="2018-03-22T19:36:34Z">
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLoginpageAndTryLogin -->
-      </class> <!-- utility.Sample1Test2 -->
+      </class> <!-- levelOne.Sample1Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

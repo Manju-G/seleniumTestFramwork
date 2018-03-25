@@ -10,8 +10,8 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import levelOne.Sample1Test;
-import page.object.HomePage;
-import page.object.LoginPage;
+import pages.HomePage;
+import pages.LoginPage;
 import resources.BaseDriverClass;
 @Listeners(TestListener.class)
 public class TempSample1Test2 extends BaseDriverClass {
