@@ -7,8 +7,10 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import resources.BaseDriverClass;
+import utility.Enumerations.selectionType;
 
 public class SeleniumUtility {
 	private static Logger log = LogManager.getLogger(SeleniumUtility.class.getName());
@@ -32,7 +34,7 @@ public class SeleniumUtility {
 	public static WebElement findElement(String locator) {
 		WebDriver driver = BaseDriverClass.getDriverInstance();
 		WebElement element = null;
-		int begin=locator.indexOf('=')+1;
+		int begin = locator.indexOf('=') + 1;
 		String elementType = locator.split("=")[0].toLowerCase();
 		String elementValue = locator.substring(begin);
 		switch (elementType) {
@@ -110,6 +112,47 @@ public class SeleniumUtility {
 		log.info("Switching windows as per request.");
 		driver.switchTo().window(oldTab);
 
+	}
+
+	public static void selectFromDropDown(String element, String data, selectionType type) {
+		log.info("Selecting the " + data + " in drop down with " + type + ".");
+		Select select = new Select(findElement(element));
+		switch (type) {
+		case INDEX:
+			select.selectByIndex(Integer.parseInt(data));
+			log.info("Selected based on index.");
+			break;
+		case VALUE:
+			select.selectByValue(data);
+			log.info("Selected based on value.");
+			break;
+		case VISABLETEXT:
+			select.selectByVisibleText(data);
+			log.info("Selected based on VisableText.");
+		default:
+			break;
+		}
+
+	}
+
+	public static void deselectFromDropDown(String element, String data, selectionType type) {
+		log.info("DeSelecting the " + data + " in drop down with " + type + ".");
+		Select select = new Select(findElement(element));
+		switch (type) {
+		case INDEX:
+			select.deselectByIndex(Integer.parseInt(data));
+			log.info("DeSelected based on index.");
+			break;
+		case VALUE:
+			select.deselectByValue(data);
+			log.info("DeSelected based on value.");
+			break;
+		case VISABLETEXT:
+			select.deselectByVisibleText(data);
+			log.info("DeSelected based on VisableText.");
+		default:
+			break;
+		}
 	}
 
 }

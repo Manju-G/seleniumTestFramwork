@@ -11,6 +11,10 @@ public class BaseTestClass {
 	public static String url = "https://phptravels.com/demo/";
 	public static WebDriverWait wait = null;
 
+	enum selectionType {
+		ID, VALUE, VISABLETEXT;
+	}
+
 	@BeforeTest
 	public void loadBrowser() {
 		wait = new WebDriverWait(BaseDriverClass.getDriverInstance(), 10);

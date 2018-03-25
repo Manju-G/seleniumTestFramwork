@@ -10,6 +10,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import resources.BaseTestClass;
 import utility.SeleniumUtility;
+import utility.Enumerations.selectionType;
 
 public class Sample1Test extends BaseTestClass {
 	private static Logger log = LogManager.getLogger(Sample1Test.class.getName());
@@ -44,5 +45,6 @@ public class Sample1Test extends BaseTestClass {
 	@Test(priority = 3)
 	public void switchBackToHomePage() {
 		SeleniumUtility.switchTowindow(oldTab);
+		SeleniumUtility.selectFromDropDown("", "", selectionType.INDEX);
 	}
 }
