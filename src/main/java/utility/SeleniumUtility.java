@@ -12,8 +12,9 @@ import resources.BaseDriverClass;
 
 public class SeleniumUtility {
 	private static Logger log = LogManager.getLogger(SeleniumUtility.class.getName());
+	private static WebDriver driver = BaseDriverClass.getDriverInstance();
 
-	public static WebDriver switchWindows(WebDriver driver) {
+	public static String switchWindows() {
 		String currentTab = driver.getWindowHandle();
 		log.info("Current opened tab : " + currentTab + " and tile is " + driver.getTitle());
 		log.info("Switching the tabs.");
@@ -25,14 +26,15 @@ public class SeleniumUtility {
 				driver.switchTo().window(string);
 			}
 		}
-		return driver;
+		return currentTab;
 	}
 
 	public static WebElement findElement(String locator) {
-		WebDriver driver = BaseDriverClass.getDriver();
+		WebDriver driver = BaseDriverClass.getDriverInstance();
 		WebElement element = null;
+		int begin=locator.indexOf('=')+1;
 		String elementType = locator.split("=")[0].toLowerCase();
-		String elementValue = locator.split("=")[1];
+		String elementValue = locator.substring(begin);
 		switch (elementType) {
 		case "id":
 			element = driver.findElement(By.id(elementValue));
@@ -65,7 +67,23 @@ public class SeleniumUtility {
 		return element;
 	}
 
-	public static void enterText(String locator, String text) {
+	public static void enterTextWithClear(String locator, String text) {
+		if (locator == null || locator.length() == 0 || locator.equals("")) {
+			log.fatal("Locator is not valid.");
+			return;
+		}
+		if (text == null) {
+			log.fatal("text is null.");
+			return;
+		}
+		WebElement element = findElement(locator);
+		log.info("Clearing the text.. ");
+		element.clear();
+		log.info("Entering text.. ");
+		element.sendKeys(text);
+	}
+
+	public static void enterTextWithoutClear(String locator, String text) {
 		if (locator == null || locator.length() == 0 || locator.equals("")) {
 			log.fatal("Locator is not valid.");
 			return;
@@ -76,6 +94,22 @@ public class SeleniumUtility {
 		}
 		log.info("Entering text.. ");
 		findElement(locator).sendKeys(text);
+	}
+
+	public static void clickOnElement(String locator) {
+		log.info("Clicking on element");
+		findElement(locator).click();
+	}
+
+	public static String getTitle() {
+		log.info("Getting the current page title.");
+		return driver.getTitle();
+	}
+
+	public static void switchTowindow(String oldTab) {
+		log.info("Switching windows as per request.");
+		driver.switchTo().window(oldTab);
+
 	}
 
 }

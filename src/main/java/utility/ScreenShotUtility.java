@@ -11,11 +11,11 @@ import org.openqa.selenium.WebDriver;
 import resources.BaseDriverClass;
 
 public class ScreenShotUtility {
-	static WebDriver driver = BaseDriverClass.getDriver();
+	static WebDriver driver = BaseDriverClass.getDriverInstance();
 	static String seperator = System.getProperty("file.separator");
 
 	public static void takeScreenshot(String methodName, String destPath) {
-		driver = BaseDriverClass.getDriver();
+		driver = BaseDriverClass.getDriverInstance();
 		File srcfile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
 			FileUtils.copyFile(srcfile, new File(destPath + seperator + methodName + ".png"));

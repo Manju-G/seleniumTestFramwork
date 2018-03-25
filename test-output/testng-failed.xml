@@ -5,9 +5,9 @@
     <classes>
       <class name="levelOne.Sample1Test">
         <methods>
-          <include name="loginLinkTest"/>
-          <include name="homepageTest"/>
           <include name="loadBrowser"/>
+          <include name="switchBackToHomePage"/>
+          <include name="closeBrowser"/>
           <include name="checkLoginpageAndTryLogin"/>
         </methods>
       </class> <!-- levelOne.Sample1Test -->

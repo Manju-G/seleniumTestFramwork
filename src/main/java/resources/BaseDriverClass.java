@@ -13,16 +13,27 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import utility.LoadPropertiesFile;
 
 public class BaseDriverClass {
-	public static WebDriver driver = null;
+	private static BaseDriverClass driverClass = null;
 	private static Logger log = LogManager.getLogger(BaseDriverClass.class.getName());
-	String currentPath = System.getProperty("user.dir");
-	File driverrPath = new File("src/main/java/Config Files/drivers");
+	// private String currentPath = System.getProperty("user.dir");
+	private File driverrPath = new File("src/main/java/Config Files/drivers");
+	private static WebDriver driver = null;
 
-	public static WebDriver getDriver() {
-		return driver;
+	public static WebDriver getDriverInstance() {
+		if (driverClass == null) {
+			driverClass = new BaseDriverClass();
+		}
+		return driverClass.initilize();
+	}
+
+	private BaseDriverClass() {
+
 	}
 
 	public WebDriver initilize() {
+		if (driver != null) {
+			return driver;
+		}
 		String path = "src/main/java/Config Files/PathFile.properties";
 		log.info("Started loading the driver");
 		Properties properties = LoadPropertiesFile.loadProperties(path);
