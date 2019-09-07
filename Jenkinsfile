@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Stage2') {
           steps {
-            build(quietPeriod: 2, job: 'Job')
+            build(quietPeriod: 2, job: 'buildbmc1')
           }
         }
       }
